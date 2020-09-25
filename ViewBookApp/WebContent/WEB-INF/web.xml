@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+		<servlet-name>RegServlet1</servlet-name>
+		<servlet-class>test.RegServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegServlet1</servlet-name>
+		<url-pattern>/reg1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegServlet2</servlet-name>
+		<servlet-class>test.RegServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegServlet2</servlet-name>
+		<url-pattern>/reg2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegServlet</servlet-name>
+		<servlet-class>test.RegServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegServlet</servlet-name>
+		<url-pattern>/reg</url-pattern>
+	</servlet-mapping>
+	
+<servlet>
+<servlet-name>UserLoginServlet</servlet-name>
+<servlet-class>test.UserLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UserLoginServlet</servlet-name>
+<url-pattern>/ulogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ViewBooksServlet</servlet-name>
+<servlet-class>test.ViewBooksServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ViewBooksServlet</servlet-name>
+<url-pattern>/view</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>SelectedBookServlet</servlet-name>
+<servlet-class>test.SelectedBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SelectedBookServlet</servlet-name>
+<url-pattern>/select</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>LogoutServlet</servlet-name>
+<servlet-class>test.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LogoutServlet</servlet-name>
+<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+<welcome-file>ULogin.html</welcome-file>
+</welcome-file-list>
+</web-app>

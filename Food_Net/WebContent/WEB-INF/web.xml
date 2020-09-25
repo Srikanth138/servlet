@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Food_Net</display-name>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.nit.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DBConnectionServlet</servlet-name>
+		<servlet-class>com.nit.controller.DBConnectionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/config/system.properties</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegisterAction</servlet-name>
+		<servlet-class>com.nit.controller.RegisterAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadRestaurant</servlet-name>
+		<servlet-class>com.nit.controller.UploadRestaurant</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadTaxiDriver</servlet-name>
+		<servlet-class>com.nit.controller.UploadTaxiDriver</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadPassenger</servlet-name>
+		<servlet-class>com.nit.controller.UploadPassenger</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CustomerOrder</servlet-name>
+		<servlet-class>com.nit.controller.CustomerOrder</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadRoot</servlet-name>
+		<servlet-class>com.nit.controller.UploadRoot</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UploadOwnTaxi</servlet-name>
+		<servlet-class>com.nit.controller.UploadOwnTaxi</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/LoginController</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DBConnectionServlet</servlet-name>
+		<url-pattern>/DBConnectionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterAction</servlet-name>
+		<url-pattern>/RegisterAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadRestaurant</servlet-name>
+		<url-pattern>/UploadRestaurant</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadTaxiDriver</servlet-name>
+		<url-pattern>/UploadTaxiDriver</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadPassenger</servlet-name>
+		<url-pattern>/UploadPassenger</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CustomerOrder</servlet-name>
+		<url-pattern>/CustomerOrder</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadRoot</servlet-name>
+		<url-pattern>/UploadRoot</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadOwnTaxi</servlet-name>
+		<url-pattern>/UploadOwnTaxi</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Update_Servlet_Ps">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Update_Servlet_Ps"/>
+        <property name="java-output-path" value="/Update_Servlet_Ps/build/classes"/>
+    </wb-module>
+</project-modules>

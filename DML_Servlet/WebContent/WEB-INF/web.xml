@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>DML_SERVLET</display-name>
+  <servlet>
+    <servlet-name>ll</servlet-name>
+    <servlet-class>test.LoginServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ll</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>is</servlet-name>
+    <servlet-class>test.InsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>is</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>up</servlet-name>
+    <servlet-class>test.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>up</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>dd</servlet-name>
+    <servlet-class>test.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dd</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>Login.html</welcome-file>
+  </welcome-file-list>
+</web-app>
