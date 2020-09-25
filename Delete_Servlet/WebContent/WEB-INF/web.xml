@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>DELETE_APPLICTION</display-name>
+  <servlet>
+    <servlet-name>dd</servlet-name>
+    <servlet-class>test.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dd</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>input.html</welcome-file>
+  </welcome-file-list>
+</web-app>
