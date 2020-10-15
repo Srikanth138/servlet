@@ -1,10 +1,8 @@
 package test;
-import java.io.*;
-@SuppressWarnings("serial")
-public class UserBean implements Serializable{
+
+public class UserBean {
 	private String uName,pWord,fName,lName,Addr,Mid;
 	private long Phno;
-	public UserBean(){}
 	public String getuName() {
 		return uName;
 	}
@@ -32,20 +30,20 @@ public class UserBean implements Serializable{
 	public String getAddr() {
 		return Addr;
 	}
-	public void setAddr(String Addr) {
-		this.Addr = Addr;
+	public void setAddr(String addr) {
+		Addr = addr;
 	}
 	public String getMid() {
 		return Mid;
 	}
-	public void setMid(String Mid) {
-		this.Mid = Mid;
+	public void setMid(String mid) {
+		Mid = mid;
 	}
 	public long getPhno() {
 		return Phno;
 	}
-	public void setPhno(long Phno) {
-		this.Phno = Phno;
+	public void setPhno(long phno) {
+		Phno = phno;
 	}
-	
+		
 }

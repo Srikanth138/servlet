@@ -13,7 +13,8 @@ public class RegisterDAO {
 			ps.setString(5, ub.getAddr());
 			ps.setLong(6, ub.getPhno());
 			ps.setString(7, ub.getMid());
-			k=ps.executeUpdate();}
+			k=ps.executeUpdate();
+			}
 			catch(Exception e){e.printStackTrace();}
 		return k;
 	}

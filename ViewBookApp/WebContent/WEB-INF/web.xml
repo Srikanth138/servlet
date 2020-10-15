@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
 <servlet>
+
+<context-param>
+<param-name>a</param-name>
+<param-value>100</param-value>
+</context-param>
+
 		<servlet-name>RegServlet1</servlet-name>
 		<servlet-class>test.RegServlet1</servlet-class>
 	</servlet>
@@ -24,7 +30,7 @@
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>RegServlet</servlet-name>
-		<url-pattern>/reg</url-pattern>
+		<url-pattern>/view2</url-pattern>
 	</servlet-mapping>
 	
 <servlet>

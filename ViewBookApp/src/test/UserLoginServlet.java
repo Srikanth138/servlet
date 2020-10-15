@@ -8,15 +8,20 @@ public class UserLoginServlet extends HttpServlet{
 		PrintWriter pw=res.getWriter();
 		res.setContentType("text/html");
 		String fName=new LoginDAO().login(req);
+
 		if(fName==null){
 			pw.println("Invalid UserName or PassWord.....<br>");
 			req.getRequestDispatcher("ULogin.html").include(req, res);
+			/*RequestDispatcher rd=req.getRequestDispatcher("ULogin.html");
+			rd.include(req, res);*/
 		}
 		else{
 			Cookie ck=new Cookie("name",fName);
 			res.addCookie(ck);
 			pw.println("WELCOME user : "+fName+"<br>");
 			req.getRequestDispatcher("Link.html").include(req, res);
+			/*RequestDispatcher rd=req.getRequestDispatcher("Link.html");
+			rd.include(req, res);*/
 		}
 	}
 }

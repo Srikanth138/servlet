@@ -3,7 +3,6 @@ import java.io.*;
 import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import java.util.stream.*;
 @SuppressWarnings("serial")
 public class SelectedBookServlet extends HttpServlet {
 	
@@ -19,15 +18,23 @@ public class SelectedBookServlet extends HttpServlet {
 			String bCode=req.getParameter("bcode");
 			ArrayList<BookBean> al=(ArrayList<BookBean>)req.getServletContext().getAttribute("jcfRef");
 			
-			@SuppressWarnings("rawtypes")
-			List l=al.stream().filter((z)->z.getbAuthor().equals(bCode)).collect(Collectors.toList());
+			//@SuppressWarnings("rawtypes")
+			//List l=al.stream().filter((z)->z.getbAuthor().equals(bCode)).collect(Collectors.toList());
+			
+			List<BookBean> l= al;  //own
 			String fName=c[0].getValue();
 			pw.println(fName+"'s page...<br>");
 			req.getRequestDispatcher("Link.html").include(req,res);
+		
 			l.forEach((k)->{
 				BookBean bb=(BookBean)k;
+				if(bCode.equals(bb.getbCode())){ //own
 				pw.println("<br>"+bb.getbCode()+"&nbsp&nbsp"+bb.getbName()+"&nbsp&nbsp"+bb.getbAuthor()+
 						"&nbsp&nbsp"+bb.getbPrice()+"&nbsp&nbsp"+bb.getbQty());
+				}
+				/*else{
+					pw.print("Wrong...");
+				}*/
 			});
 		}
 	}

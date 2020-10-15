@@ -38,7 +38,7 @@ public class First1 extends GenericServlet{
 		else
 			pw.print("ENTER ONLY NUMBERS");
 	}
-	public void destory(){
+	public void destroy(){
 //		close the all conection's
 	}
 }

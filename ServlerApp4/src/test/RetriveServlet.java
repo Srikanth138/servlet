@@ -12,6 +12,7 @@ public class RetriveServlet extends GenericServlet{
 	public void service(ServletRequest req,ServletResponse res)throws ServletException,IOException{
 		PrintWriter pw=res.getWriter();
 		res.setContentType("text/html");
+//		boolean z=rd.retrive(req,res);
 		boolean z=rd.retrive(req,pw);
 		if(!z){
 			pw.println("Invaild bookCode......<br>");

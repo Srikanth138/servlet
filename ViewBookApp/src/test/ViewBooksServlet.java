@@ -12,21 +12,30 @@ public class ViewBooksServlet extends HttpServlet {
 		if(c==null){
 			pw.println(" please ! Login first....<br>");
 			req.getRequestDispatcher("Login.html").include(req, res);
-			}else{
+			}
+			else{
 				String fName=c[0].getValue();
 				pw.println(fName+"'s page...<br>");
-				ArrayList<BookBean> al=new RetriveDAO().retrive();
+				ArrayList<BookBean> al=new RetriveDAO().retrive(); //constructer calling the method
 				if(al.size()==0){
 					pw.println("NO Books found...<br>");
-				}else{
+				}
+				else{
 					req.getServletContext().setAttribute("jcfRef", al);
-					al.forEach((k)->
+					for(BookBean bb:al){
+						pw.println("<a href='select?bcode="+bb.getbCode()+"'>"+bb.getbCode()+"</a> &nbsp&nbsp"+bb.getbName()+"<br/>");
+										// ? -> separet class and parameters
+					}
+//					req.getRequestDispatcher("select").include(req, res);
+					
+					/*al.forEach((k)->
 					{
 						BookBean bb=(BookBean)k;
 						pw.println("<a href='select?bcode="+bb.getbCode()+"'>"+bb.getbCode()+"</a>");
 						pw.println("&nbsp&nbsp"+bb.getbName());
-					});
-				}
-			}
-	}
-}
+					});*/
+					
+				}//else
+		} //else
+	} //service
+}//class

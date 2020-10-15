@@ -1,9 +1,17 @@
 package test;
-import java.sql.*;
-import java.io.*;
-import javax.servlet.*;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.ServletRequest;
 public class RetrivalDAO {
 	public boolean z;
+	
+	/*public boolean retrive(ServletRequest req,ServletResponse res) throws IOException{
+		PrintWriter pw=res.getWriter();
+		res.setContentType("text/html");*/
+	
 	public boolean retrive(ServletRequest req,PrintWriter pw){
 		try{
 			Connection con=DBConnection.getCon();

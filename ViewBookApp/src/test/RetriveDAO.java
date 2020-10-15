@@ -3,7 +3,7 @@ import java.sql.*;
 import java.util.*;
 public class RetriveDAO {
 	public ArrayList<BookBean> al=new ArrayList<BookBean>();
-	public ArrayList<BookBean> retrive(){
+	public ArrayList<BookBean> retrive(){ //al return here 
 		try{
 			Connection con=DBConnection.getCon();
 			PreparedStatement ps=con.prepareStatement("select * from Book27");

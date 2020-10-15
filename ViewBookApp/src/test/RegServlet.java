@@ -1,5 +1,7 @@
 package test;
 import java.io.*;
+import java.sql.PreparedStatement;
+
 import javax.servlet.*;
 public class RegServlet extends GenericServlet {
 	public ServletContext sct;
