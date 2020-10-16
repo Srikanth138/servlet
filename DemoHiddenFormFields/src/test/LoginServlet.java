@@ -15,8 +15,9 @@ public class LoginServlet extends HttpServlet{
 				pw.println("<form action='view' method='get'>");
 				pw.println("<input type='hidden' name='name' value='"+fName+"'>");
 				pw.println("<input type='submit' value='view'>");
+				pw.println("<a href='logout'>Logout</a>");
 				pw.println("</form>");
-				pw.println("<a herf='logout'>Logout</a>");
+				
 			}
 	}
 }
