@@ -18,7 +18,7 @@ public class LoginDAO {
 		return fName;
 	}
 	public String login(ServletRequest req) {
-		// TODO Auto-generated method stub
+	
 		return null;
 	}
 }

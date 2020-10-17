@@ -3,7 +3,7 @@ package INFO;
 public class Test3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		byte b=10;
 		short s=20;
 		char c='c';

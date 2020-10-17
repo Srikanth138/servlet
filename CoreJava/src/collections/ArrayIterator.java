@@ -9,6 +9,7 @@ Irt(){
 	o=new Object[capacity];
 }
 //non-static Inner class/member class
+@SuppressWarnings("hiding")
 public class ArrayIterator<E> implements Iterator<E>{
 	public E next(){
 		return null;
@@ -17,11 +18,11 @@ public class ArrayIterator<E> implements Iterator<E>{
 
 	@Override
 	public boolean hasNext() {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 }
-Iterator iterator(){
-	return new ArrayIterator();
+Iterator<E> iterator(){
+	return new ArrayIterator<E>();
 }
 }

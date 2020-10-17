@@ -7,7 +7,7 @@ import java.io.*;
 public class BufferedReader {
 
 	public BufferedReader(FileReader fr, int i) {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public static void main(String[] args) {
@@ -24,7 +24,6 @@ public class BufferedReader {
 	}
 
 	private int read() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 

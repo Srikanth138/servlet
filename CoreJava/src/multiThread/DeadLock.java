@@ -35,12 +35,11 @@ public class DeadLock {
 		}
 
 			private void Syncronized(String r2) {
-				// TODO Auto-generated method stub
+
 				
 	}
 
 	protected static void syncronized(String r1) {
-		// TODO Auto-generated method stub
 		
 	}
 }*/

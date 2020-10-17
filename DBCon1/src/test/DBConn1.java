@@ -2,7 +2,7 @@ package test;
 import java.sql.*;
 public class DBConn1 {
 		public static void main(String[] args) {
-			// TODO Auto-generated method stub
+		
 	//System.out.println("hello");
 	try{
 	Class.forName("oracle.jdbc.driver.OracleDriver");

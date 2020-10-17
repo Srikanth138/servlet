@@ -9,7 +9,7 @@ import java.io.*;
 public class PrintWriter {
 
 	public PrintWriter(FileWriter fw) {
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class PrintWriter {
 	}
 
 	private void println(String string) {
-		// TODO Auto-generated method stub
+	
 		
 	}
 

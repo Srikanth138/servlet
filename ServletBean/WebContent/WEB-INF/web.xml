@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ServletBean</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>select1</servlet-name>
+    <servlet-class>com.Dao.SelectDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>select1</servlet-name>
+    <url-pattern>/select</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>insert2</servlet-name>
+    <servlet-class>com.controller.InsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert2</servlet-name>
+    <url-pattern>/InsertController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>insert1</servlet-name>
+    <servlet-class>com.util.Insert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insert1</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>delete1</servlet-name>
+    <servlet-class>com.util.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete1</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
