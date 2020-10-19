@@ -31,7 +31,7 @@ public class SecondDisplay extends HttpServlet {
 		
 				//Cookie c[]=request.getCookies();
 				c=req.getCookies();
-				String name=c[0].getValue(); //String name=c[1].getValue(); AIOBE -> cookie store small pice of amount.
+				String name=c[0].getValue();  //String name=c[1].getValue(); AIOBE -> cookie store small pice of amount.
 				pw.println("<br>WellCome :"+name);
 	
 		bb=(BookBean)sct.getAttribute("beanSct"); //calling webApplication level 
