@@ -5,7 +5,6 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -31,7 +30,7 @@ public class FirstLogic extends HttpServlet {
 		try {
 			 name=fd.select(req,res);//calling the method in FirstDAO class
 			 
-			 Cookie ck=new Cookie("fname", name);
+			 Cookie ck=new Cookie("fname", name); //create the cookie
 			 res.addCookie(ck); //cookie adding name
 			 
 			 if(name==null){

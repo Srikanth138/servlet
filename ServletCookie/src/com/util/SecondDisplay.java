@@ -36,12 +36,19 @@ public class SecondDisplay extends HttpServlet {
 	
 		bb=(BookBean)sct.getAttribute("beanSct"); //calling webApplication level 
 		bbb=(BookBean)req.getAttribute("beanReq"); //calling request level
+		
 		pw.println("<br>ServletContext :"+bb.getbCode()+","+bb.getbName()+","+bb.getbAuthor()+","+bb.getbPrice()+","+bb.getbQty());
 		pw.println("<br>ServletRequest :"+bbb.getbCode()+","+bbb.getbName()+","+bbb.getbAuthor()+","+bbb.getbPrice()+","+bbb.getbQty());
+		c[0].setMaxAge(0); //destory the cookie
+		
+		Cookie ck=new Cookie("beanSct","");
+		res.addCookie(ck);
+		Cookie c[]=req.getCookies();
+			   c[0].setMaxAge(0); //destory the cookie
 	
 	}
 	public void destroy() {
-		c[0].setMaxAge(0); //destory the cookie
+		
 	}
 
 

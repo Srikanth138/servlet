@@ -29,6 +29,7 @@ public class BookDAO {
 		bb.setbPrice(rs.getFloat(4));
 		bb.setbQty(rs.getInt(5));	
 		
+		//l.add(bb);
 		}
 		return l;
 		
