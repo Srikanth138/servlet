@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+
 <listener>
-<listener-class>
-test.CountUserListener
-</listener-class>
+    <listener-class>test.CountUserListener</listener-class>
 </listener>
 
 <welcom-file-list>
