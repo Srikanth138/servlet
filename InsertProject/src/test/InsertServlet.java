@@ -22,6 +22,8 @@ public class InsertServlet extends GenericServlet {
 			pw.println("DETAILES ARE SUCCESFULLY INSERTED....");
 		else
 			pw.println("NOT INSERTED..?");
+		
+		pw.println("<a href='login.html'>home</a>");
 	}
 
 }

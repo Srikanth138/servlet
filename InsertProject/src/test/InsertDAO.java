@@ -10,10 +10,11 @@ public class InsertDAO {
 	public int insert(ServletRequest req){
 		try{
 			Connection con=DBconnection.getCon();
-			PreparedStatement ps=con.prepareStatement("INSERT INTO TEST1 VALUES(?,?,?)");
+			//INSERT INTO `srikanth`.`test1` (`EID`, `ENAME`, `SAL`) VALUES ('101', 'srikanth', '1000');
+			PreparedStatement ps=con.prepareStatement("INSERT INTO TEST VALUES(?,?,?)");
 			ps.setInt(1, Integer.parseInt(req.getParameter("id"))); //int is not accept directly wecan 
 			ps.setString(2, req.getParameter("name"));
-			ps.setInt(3, Integer.parseInt(req.getParameter("salary")));
+			ps.setFloat(3, Float.parseFloat(req.getParameter("salary")));
 			k=ps.executeUpdate();
 		}catch(Exception e){
 			e.printStackTrace();
