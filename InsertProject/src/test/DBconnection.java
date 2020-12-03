@@ -28,9 +28,8 @@ public class DBconnection {
 		
 		Class.forName(driver); 
 		
-		//jdbc:mysql://localhost:3306/?user=root
 //		conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/srikanth","root","root");
-		conn=DriverManager.getConnection("jdbc:mysql:///srikanth","root","root");
+		conn=DriverManager.getConnection("node52698-env-6092077.cloudjiffy.net","root","MDSycy61014");
 		System.out.println("DBconnection.getCon()-");
 		return conn;
 	}

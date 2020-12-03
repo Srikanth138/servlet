@@ -7,7 +7,8 @@ import javax.servlet.ServletRequest;
 
 public class InsertDAO {
 	public int k;
-	private static final String Query="INSERT INTO test1(EID,ENAME,SAL)VALUES(?,?,?)";
+	//private static final String Query="INSERT INTO test(EID,ENAME,SAL)VALUES(?,?,?)";
+	private static final String Query="INSERT INTO test(id,name,salary) VALUES(?,?,?)";
 	public int insert(ServletRequest req){
 		try{
 			
