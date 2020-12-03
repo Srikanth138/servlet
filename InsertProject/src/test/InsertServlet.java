@@ -18,7 +18,7 @@ public class InsertServlet extends GenericServlet {
 		PrintWriter pw=res.getWriter();
 		res.setContentType("text/html");
 		int k=id.insert(req); //method 
-		if(k!=0)
+		if(k>0)
 			pw.println("DETAILES ARE SUCCESFULLY INSERTED....");
 		else
 			pw.println("NOT INSERTED..?");
