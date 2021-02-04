@@ -7,6 +7,8 @@ public class DemoMap {
 		hm.put("A121", new Product1("name",1200,12));
 		hm.put(new String("A122"), new Product1("key",1300,13));
 		hm.put(new String("A120"), new Product1("mouse",1400,14));
+		hm.put("A121", new Product1("name",1200,12));
+		hm.put(null, new Product1("mam",12,12));
 		System.out.println(hm);
 		
 		LinkedHashMap <String,Product1> lhm=new LinkedHashMap<String,Product1>(); //organize elements in insertion order.
@@ -14,6 +16,8 @@ public class DemoMap {
 		lhm.put("A121", new Product1("name",1200,12));
 		lhm.put(new String("A122"), new Product1("key",1300,13));
 		lhm.put(new String("A120"), new Product1("mouse",1400,14));
+		lhm.put("A121", new Product1("name",1200,12));
+		lhm.put(null, new Product1("mam",12,12));
 		lhm.forEach((k,v)->{
 		System.out.println(k+"\t"+v);
 		});
@@ -23,6 +27,8 @@ public class DemoMap {
 		tm.put("A121", new Product1("name",1200,12));
 		tm.put(new String("A122"), new Product1("key",1300,13));
 		tm.put(new String("A120"), new Product1("mouse",1400,14));
+		tm.put("A121", new Product1("name",1200,12));
+//		tm.put(null, new Product1("mam",12,12)); //not allowd null keys
 		tm.forEach((k,v)->{
 		System.out.println(k+"\t"+v);
 		});
@@ -32,6 +38,8 @@ public class DemoMap {
 		ht.put(new String("A121"), new Product1("name",1200,12));
 		ht.put(new String("A122"), new Product1("key",1300,13));
 		ht.put(new String("A120"), new Product1("mouse",1400,14));
+		ht.put("A121", new Product1(null,1200,12));
+		ht.put(null, new Product1(null,12,12)); //not allowd null keys
 		ht.forEach((k,v)->{
 		System.out.println(k+"\t"+v);
 		});
